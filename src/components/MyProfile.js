@@ -67,12 +67,12 @@ class MyProfile extends Component {
 
         <div>
           <label>Description<br />
-            <input 
-              type='textarea' 
+            <textarea 
               id='description' 
+              value={this.state.description}
               placeholder='Description about yourself' 
-              value={this.state.description} 
-              onChange={this.handleDescriptionChange} />
+              onChange={this.handleDescriptionChange}>
+            </textarea>
           </label>
         </div>
 
