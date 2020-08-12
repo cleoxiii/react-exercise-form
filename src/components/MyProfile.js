@@ -77,7 +77,7 @@ class MyProfile extends Component {
         </div>
 
         <div>
-          <label>
+          <label id="checkbox">
             <input 
               type='checkbox' 
               id='checkbox' 
@@ -86,14 +86,12 @@ class MyProfile extends Component {
           </label>
         </div>
         
-        <div>
-          <button 
-            className='btn btn-primary' 
-            type='submit'
-            disabled={!this.state.name || !this.state.description || !this.state.isChecked}>
-            Submit
-          </button>
-        </div>
+        <button 
+          className='btn btn-primary' 
+          type='submit'
+          disabled={!this.state.name || !this.state.description || !this.state.isChecked}>
+          Submit
+        </button>
       </form>
     );
   }
