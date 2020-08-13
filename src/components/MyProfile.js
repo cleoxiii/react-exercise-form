@@ -29,7 +29,7 @@ class MyProfile extends Component {
 
   handleCheckChange = event => {
     this.setState({
-      isChecked: event.target.value
+      isChecked: event.target.checked
     })
   }
 
